@@ -5,6 +5,7 @@ BIN_FILES := $(patsubst %.cpp,%,$(SRC_FILES))
 COLOR_GREEN := @printf "\e[1;32m"
 COLOR_BLUE  := @printf "\e[1;34m"
 COLOR_RESET := @printf "\e[0m"
+M32_FLAG := -m32 -static-libstdc++
 
 all: argtable liblist split mod_website mod_normal gen_dockerfile mod_database
 

@@ -3,6 +3,7 @@ LIB_PATH  := ../../lib
 SRC_FILES := $(wildcard *.cpp)
 OBJ_FILES := $(patsubst %.cpp,%.o,$(SRC_FILES))
 DLL_FILES := $(patsubst %.o,%.so,$(OBJ_FILES))
+M32_FLAG := -m32 -static-libstdc++
 
 all: $(DLL_FILES)
 %.so: %.o

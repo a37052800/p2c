@@ -156,7 +156,7 @@ function createSvgIcon(type) {
 }
 
 // init
-const inputJSON = '{"init_args":["--gui","--website"],"COPY":["/etc","/etc","/var/www","/var/www"],"ENV":["key","value"],"ADD":["/etc","/etc"],"Hello":["This is test text.","arg0"]}'
+const inputJSON = '{"init_args":["--gui","--website"],"COPY":["/etc","/etc","/var/www","/var/www"],"ENV":["key","value"],"ADD":["/etc","/etc"]}'
 data = JSON.parse(inputJSON);
 for (var element in data) {
     console.log(element, data[element]);

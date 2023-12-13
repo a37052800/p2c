@@ -1,5 +1,6 @@
 BIN_PATH  := ../../bin
 CORE_PATH := ./
+M32_FLAG := -m32 -static-libstdc++
 
 all: p2c
 
