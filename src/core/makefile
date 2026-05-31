@@ -5,6 +5,7 @@ M32_FLAG := -m32 -static-libstdc++
 all: p2c
 
 p2c: p2c.o
+	- mkdir ../../bin
 	g++ -rdynamic $< -o $(BIN_PATH)/$@ -ldl
 	rm $<
 .cpp.o:
